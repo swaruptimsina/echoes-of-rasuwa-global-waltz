@@ -61,7 +61,10 @@ test('Official NASA Space Apps 2026 resources and real Gemini female voice TTS a
     new URL('../src/audio/retroAudioAndVoice.ts', import.meta.url),
     'utf8'
   );
-  const server = await readFile(new URL('../server.ts', import.meta.url), 'utf8');
+  const server =
+    (await readFile(new URL('../server.ts', import.meta.url), 'utf8')) +
+    '\n' +
+    (await readFile(new URL('../lib/ttsEngine.ts', import.meta.url), 'utf8'));
 
   // Official NASA, CSA, and CONAE challenge resources
   assert.match(resources, /Mount Rainier/);
@@ -173,7 +176,10 @@ test('Scene 1 renders Lali on the ground outside Flag House, story beats show si
 });
 
 test('Human Neural Voice (Edge AnaNeural) and runtime Gemini AI Studio key config are integrated end-to-end', async () => {
-  const server = await readFile(new URL('../server.ts', import.meta.url), 'utf8');
+  const server =
+    (await readFile(new URL('../server.ts', import.meta.url), 'utf8')) +
+    '\n' +
+    (await readFile(new URL('../lib/ttsEngine.ts', import.meta.url), 'utf8'));
   const audio = await readFile(
     new URL('../src/audio/retroAudioAndVoice.ts', import.meta.url),
     'utf8'
