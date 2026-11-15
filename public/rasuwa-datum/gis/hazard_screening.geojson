@@ -1,0 +1,235 @@
+{
+  "type": "FeatureCollection",
+  "name": "Rasuwa non-operational SAR screening findings",
+  "metadata": {
+    "validated_precursor_feature_count": 0,
+    "event_spanning_change_feature_count": 1,
+    "diagnosed_failure_feature_count": 1,
+    "warning": "Ranks order evidence confidence for retrospective review, not failure probability or urgency."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "cband-event-coherence-detachment",
+      "properties": {
+        "screening_rank": 1,
+        "finding_type": "event-spanning localized coherence loss",
+        "confidence": "medium-low",
+        "precursor_deformation_validated": false,
+        "target_filtered_anomaly_pixels": 158,
+        "target_valid_pixels": 307,
+        "control_filtered_false_alarm_pixels": 1225,
+        "control_valid_pixels": 30161,
+        "threshold": -0.12616199254989624,
+        "mmu_area_km2": 0.0256,
+        "exposure_context_within_5km": {
+          "settlement": 6,
+          "bridge": 2
+        },
+        "exposure_context_within_20km": {
+          "settlement": 81,
+          "bridge": 34,
+          "hydropower_context": 1
+        },
+        "source_products": [
+          "S1_180590_IW2_20260804T122147_VV_F90B-BURST",
+          "S1_180590_IW2_20260816T122147_VV_0444-BURST",
+          "S1_180590_IW2_20260828T122148_VV_93F8-BURST"
+        ],
+        "provenance_label": "observation-derived screening",
+        "operational_limit": "retrospective screening only; not prediction, warning, or unique cause attribution"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.52884351385575,
+              28.285396884736077
+            ],
+            [
+              85.52924105430158,
+              28.286010421894265
+            ],
+            [
+              85.52981190941013,
+              28.286576640692022
+            ],
+            [
+              85.52993214891087,
+              28.2896574102691
+            ],
+            [
+              85.52977724611826,
+              28.29154905645299
+            ],
+            [
+              85.52951835614496,
+              28.29342197543477
+            ],
+            [
+              85.5283597387359,
+              28.29417128250604
+            ],
+            [
+              85.52668118003366,
+              28.294847714874752
+            ],
+            [
+              85.52491488467423,
+              28.29546616017419
+            ],
+            [
+              85.52316418227153,
+              28.29579750749216
+            ],
+            [
+              85.52165114085535,
+              28.295747714655967
+            ],
+            [
+              85.52022367564804,
+              28.295762023444663
+            ],
+            [
+              85.51833432277283,
+              28.295219510188904
+            ],
+            [
+              85.51674913765615,
+              28.294392376521195
+            ],
+            [
+              85.5155911778139,
+              28.293709077021425
+            ],
+            [
+              85.51518236440955,
+              28.29233634328833
+            ],
+            [
+              85.51481168898061,
+              28.29067019665913
+            ],
+            [
+              85.51398974127541,
+              28.28937774209287
+            ],
+            [
+              85.5129916617908,
+              28.288343767458464
+            ],
+            [
+              85.51197420834043,
+              28.287473410980326
+            ],
+            [
+              85.5108780813358,
+              28.286430887990246
+            ],
+            [
+              85.51234295957806,
+              28.284820525407184
+            ],
+            [
+              85.5142832945406,
+              28.283639056316947
+            ],
+            [
+              85.51629570403334,
+              28.283399244621386
+            ],
+            [
+              85.51863351206808,
+              28.283206750311376
+            ],
+            [
+              85.51939111344946,
+              28.282191411309736
+            ],
+            [
+              85.52133440207267,
+              28.28298631971602
+            ],
+            [
+              85.52223061889231,
+              28.28293205844409
+            ],
+            [
+              85.52336785460095,
+              28.283065689591776
+            ],
+            [
+              85.52440555877276,
+              28.2838906962826
+            ],
+            [
+              85.52485119501893,
+              28.28441457210629
+            ],
+            [
+              85.52602540628298,
+              28.284931579758304
+            ],
+            [
+              85.5273170390328,
+              28.285345184547065
+            ],
+            [
+              85.52884351385575,
+              28.285396884736077
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nisar-lband-source-decorrelation-window",
+      "properties": {
+        "screening_rank": 2,
+        "finding_type": "event-pair L-band decorrelation and phase-coverage failure",
+        "confidence": "high for failure diagnosis; low for event attribution",
+        "precursor_deformation_validated": false,
+        "quiet_coherence_median": 0.21875262260437012,
+        "event_coherence_median": 0.10205763578414917,
+        "quiet_phase_valid_pixels": 249,
+        "event_phase_valid_pixels": 9,
+        "total_pixels": 528,
+        "source_products": [
+          "NISAR_L2_PR_GUNW_025_098_A_016_026_4000_SH_20260714T233920_20260714T233954_20260726T233919_20260726T233954_P05023_N_F_J_001",
+          "NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001"
+        ],
+        "provenance_label": "observation-derived diagnosed failure",
+        "operational_limit": "no LOS displacement, velocity, precursor, or prediction is reported"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.531,
+              28.282
+            ],
+            [
+              85.531,
+              28.297
+            ],
+            [
+              85.511,
+              28.297
+            ],
+            [
+              85.511,
+              28.282
+            ],
+            [
+              85.531,
+              28.282
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

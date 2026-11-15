@@ -1,0 +1,23 @@
+# Third-Party Data, Imagery & Mission Attributions (NOTICE)
+
+**Echoes of Rasuwa: Global Waltz** integrates open scientific metadata, reference imagery, and educational curricula from the following space agencies and public archives. Use of these datasets does not imply endorsement by NASA, ISRO, CSA, CONAE, ESA, JAXA, or the U.S. Government.
+
+## 1. NASA / JPL-Caltech / ISRO / ASF DAAC (NISAR Mission)
+- **NISAR Level-1/2/3 Archive Metadata & Public Browse Quicklooks:** Retrieved via the NASA Common Metadata Repository (`cmr.earthdata.nasa.gov`, provider `ASF`) and hosted by the NASA Alaska Satellite Facility Distributed Active Archive Center (ASF DAAC).
+- **Hubbard Glacier Reference Imagery (`public/nisar-reference/`):** NASA Earth Observatory (2026), *"Glacier Aftereffects of the Hubbard Earthquake"*, prepared using NISAR L-band SAR data courtesy of NASA/JPL-Caltech/ASF/USGS (`2025-11-26` and `2025-12-08`).
+- **Maturity Notice:** NISAR Level-2 (`GCOV`, `GUNW`, `GOFF`, `GSLC`) and Level-3 (`SME2`) products in the early mission archive carry `PROVISIONAL` (`P05012`, `P05023`) or `BETA` (`X05007`, `X05010`) Composite Release Identifiers (CRIDs). Calibration and geolocation remain subject to update.
+
+## 2. NASA EOSDIS GIBS, NASA POWER & NASA EONET
+- **NASA Global Imagery Browse Services (GIBS):** Synoptic WMTS basemap layers (`BlueMarble_ShadedRelief_Bathymetry`, `MODIS_Terra_CorrectedReflectance_TrueColor`, `IMERG_Precipitation_Rate`).
+- **NASA Prediction Of Worldwide Energy Resources (POWER):** MERRA-2 Agroclimatology monthly precipitation and temperature climatology (`1991–2020`).
+- **NASA Earth Observatory Natural Event Tracker (EONET v3):** Open natural hazard event metadata catalog.
+
+## 3. Canadian Space Agency (CSA)
+- **RADARSAT Constellation Mission (RCM) & RADARSAT-1 Archive:** Mission specifications, compact polarization principles, and historical archive references courtesy of the Canadian Space Agency (CSA) and Natural Resources Canada (EODMS).
+
+## 4. Comisión Nacional de Actividades Espaciales (CONAE, Argentina)
+- **SAOCOM 1A & 1B L-Band SAR Constellation:** Mission specifications and GeoCatalog reference workflow courtesy of CONAE.
+
+## 5. Additional Scientific & Field Reference Sources
+- **Copernicus Sentinel-1 & Sentinel-2 / Landsat 8–9:** Courtesy of ESA / European Commission and USGS / NASA.
+- **Historical & Field Photographs (`public/incident_photos/`):** Individual attributions, licenses, and provenance are documented in `docs/sources-ledger.json` and `docs/SCIENCE_AND_PROVENANCE.md`.

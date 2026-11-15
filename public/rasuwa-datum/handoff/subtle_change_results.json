@@ -1,0 +1,71 @@
+{
+  "event_utc": "2026-08-26T02:52:10Z",
+  "results": [
+    {
+      "id": "cband_localized_coherence_loss",
+      "status": "validated descriptive result",
+      "confidence": "medium-low",
+      "observation": "Paired-pixel median coherence change was -0.1313 in the preliminary detachment polygon versus +0.1841 in the local control ring.",
+      "validation": "Independent preliminary optical detachment polygon, temporal null pair, local ring, and control-calibrated 5th-percentile/MMU mask.",
+      "false_alarm_accounting": {
+        "observable": "Sentinel-1D VV event-minus-quiet normalized coherence",
+        "source_raster": "data/processed/s1d_hyp3/analysis/coherence_event_minus_quiet.tif",
+        "independent_reference": "data/inputs/validation/unosat_detachment.geojson",
+        "reference_role": "preliminary independent optical detachment polygon; not field ground truth",
+        "analysis_bbox_wsen": [
+          85.34,
+          28.23,
+          85.55,
+          28.32
+        ],
+        "control_definition": "valid land pixels in analysis bbox outside a 300 m detachment buffer",
+        "threshold_rule": "0.050 lower quantile of control event-minus-quiet coherence",
+        "threshold": -0.12616199254989624,
+        "mmu_pixels": 4,
+        "mmu_area_km2": 0.0256,
+        "pixel_area_km2": 0.0064,
+        "target_valid_pixels": 307,
+        "target_raw_anomaly_pixels": 158,
+        "target_filtered_anomaly_pixels": 158,
+        "target_filtered_anomaly_fraction": 0.5146579804560261,
+        "control_valid_pixels": 30161,
+        "control_raw_false_alarm_pixels": 1509,
+        "control_raw_false_alarm_fraction": 0.050031497629388945,
+        "control_filtered_false_alarm_pixels": 1225,
+        "control_filtered_false_alarm_fraction": 0.04061536421206193,
+        "full_fixed_aoi_valid_pixels": 30768,
+        "limitations": [
+          "The HyP3 burst bundle supplied water/nodata masks but no explicit layover-shadow mask; steep-terrain geometry remains an unresolved censoring issue.",
+          "The threshold is calibrated to this one temporal null/event comparison and is not a transferable hazard threshold.",
+          "Coherence loss is an observable, not unique evidence of movement; snow, moisture, surface disruption, atmosphere, and processing differences remain possible.",
+          "The map is retrospective screening support, not a forecast or operational warning product."
+        ]
+      },
+      "interpretation": "Localized event-spanning coherence loss is supported; unique cause, precursor motion, displacement, and prediction are not."
+    },
+    {
+      "id": "nisar_gunw_displacement",
+      "status": "diagnosed failure",
+      "confidence": "high for the failure diagnosis",
+      "observation": "Event-pair source phase coverage fell to 9 of 528 80 m pixels (1.70%), while the exploratory control retained 420 of 420.",
+      "validation": "Quiet pair, spatial control, track-48 alternative-look test, encoded masks, connected components, and ionosphere flags.",
+      "interpretation": "No defensible LOS displacement or pre-event rate is reported."
+    },
+    {
+      "id": "nisar_goff_subtle_offsets",
+      "status": "diagnosed failure",
+      "confidence": "high for the failure diagnosis",
+      "observation": "Raw, unculled event-source GOFF layer-1 offsets had correlation median 0.2206 and extreme p05/p95 ranges of hundreds of metres.",
+      "validation": "Quiet and control subsets were processed with the same range-read code; control correlation remained about 0.86.",
+      "interpretation": "The raw layers cannot support a sub-metre subtle-motion claim without culling, stable-reference modeling, and uncertainty estimation."
+    },
+    {
+      "id": "nisar_gcov_backscatter_change",
+      "status": "exploratory observable",
+      "confidence": "low for event attribution",
+      "observation": "Event-source HH gamma-0 change widened to p05/p95 \u22126.69/+5.77 dB, while the event control was \u22123.19/+3.14 dB.",
+      "validation": "Matched quiet and control windows were range-read from provisional GCOV products.",
+      "interpretation": "This is calibrated backscatter change only; it is not classified as debris, water, or movement."
+    }
+  ]
+}

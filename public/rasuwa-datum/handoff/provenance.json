@@ -1,0 +1,175 @@
+{
+  "study": "26 August 2026 Rasuwa–Bhotekoshi event",
+  "non_operational": true,
+  "asset_count": 24,
+  "assets": [
+    {
+      "file": "README.md",
+      "sha256": "b33c241b2ec0ec169424372b3d7814932925579b2b0b46a5bd650158974ab354",
+      "bytes": 346,
+      "provenance_label": "documentation",
+      "interpretation_limit": "Read before using any asset."
+    },
+    {
+      "file": "acquisition_timeline.csv",
+      "sha256": "6365314248181790dc8f14b0471dea143b4f0de62cee7973736683172b4a1de1",
+      "bytes": 108682,
+      "provenance_label": "catalog observation",
+      "interpretation_limit": "Acquisition and archive timestamps are not warning time or delivery guarantees."
+    },
+    {
+      "file": "acquisition_timeline.json",
+      "sha256": "7858e180c17031ca0976057107e1a93740afe9fdd735611763d433f0e89dae25",
+      "bytes": 273935,
+      "provenance_label": "catalog observation",
+      "interpretation_limit": "Acquisition and archive timestamps are not warning time or delivery guarantees."
+    },
+    {
+      "file": "cband_coherence_comparison.png",
+      "sha256": "e9f3e2606d983993113cb157d4656d0023aeb65dfa8cd574de31c1343fb5760d",
+      "bytes": 600655,
+      "provenance_label": "observation-derived visualization",
+      "interpretation_limit": "Rendered observables are not unique physical classes, displacement, or prediction."
+    },
+    {
+      "file": "cband_coherence_comparison.webp",
+      "sha256": "74e8622e4c7472af424be57af57632e0c15e932dd92cd9baaaabd21f59cc1330",
+      "bytes": 319212,
+      "provenance_label": "observation-derived visualization",
+      "interpretation_limit": "Rendered observables are not unique physical classes, displacement, or prediction."
+    },
+    {
+      "file": "change_mask.json",
+      "sha256": "a6dfecd69672ba0ae03c0914260b878f0dee41d9efc8f8deae24202faa6ec4c3",
+      "bytes": 5125,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "coherence_loss_screening_mask.json",
+      "sha256": "92e7ece923b972c4bc745cdf618b04604328a6f71609f8a13c23b89e152e2c86",
+      "bytes": 1718,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "coherence_loss_screening_mask.png",
+      "sha256": "1235c1c60fa18fc0d97de883034f2f32c77be5f80a9b86dad4288c75e45a26aa",
+      "bytes": 4642,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "coherence_loss_screening_mask.webp",
+      "sha256": "302366a2d5c0eedc38288d7960df9b5904843f202749e315a2ed3e129620b7c1",
+      "bytes": 852,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "connected_system_aoi.geojson",
+      "sha256": "871176c54e11bc1602240a2f3d7ce8e3e3db037585a48c04f0cf0923956a5776",
+      "bytes": 88470,
+      "provenance_label": "model/context geometry",
+      "interpretation_limit": "Analysis/context boundary; not a legal, hazard, inundation, or jurisdiction boundary."
+    },
+    {
+      "file": "exposure_context_20km.geojson",
+      "sha256": "484ce11f8e8782afac7a5c839fe8cce1a1770e924f842e1511675c35f8deede4",
+      "bytes": 114292,
+      "provenance_label": "observation/model context",
+      "interpretation_limit": "Context only; proximity or coarse grids are not local risk or field measurement."
+    },
+    {
+      "file": "hazard_screening.geojson",
+      "sha256": "85d82204e42aadcf12eaeb4c3b9f0c4d388c8bc0f8d7fae50e51208642e4edd7",
+      "bytes": 6414,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "l_vs_c_coherence.json",
+      "sha256": "faea5255acd13ef4676ebf134b688d9249c649551ba110d18f1cae2c4a47004f",
+      "bytes": 1911,
+      "provenance_label": "observation-derived analysis",
+      "interpretation_limit": "Descriptive research comparison with the limitations carried in the file."
+    },
+    {
+      "file": "latency_table.csv",
+      "sha256": "399d2d3afc78205996a5a578eae175a73af684ea355c454fef17a9a5048c46d9",
+      "bytes": 3563,
+      "provenance_label": "catalog observation",
+      "interpretation_limit": "Acquisition and archive timestamps are not warning time or delivery guarantees."
+    },
+    {
+      "file": "latency_table.json",
+      "sha256": "d359d405b280abe74212927fa2236eb60a696836f524e1cc7fb8d1fd66e07b7f",
+      "bytes": 8031,
+      "provenance_label": "catalog observation",
+      "interpretation_limit": "Acquisition and archive timestamps are not warning time or delivery guarantees."
+    },
+    {
+      "file": "lband_coherence_comparison.png",
+      "sha256": "233de06257d251f2660f9b5743cf23408583876c9b087496d5dd8b0c00736f21",
+      "bytes": 50962,
+      "provenance_label": "observation-derived visualization",
+      "interpretation_limit": "Rendered observables are not unique physical classes, displacement, or prediction."
+    },
+    {
+      "file": "lband_coherence_comparison.webp",
+      "sha256": "38394a8d593e7de5aa16f492a280605b65c0068a85cc9c28b2e22b1e74d2943a",
+      "bytes": 23280,
+      "provenance_label": "observation-derived visualization",
+      "interpretation_limit": "Rendered observables are not unique physical classes, displacement, or prediction."
+    },
+    {
+      "file": "rainfall_timeseries.json",
+      "sha256": "64c192f1726ce8e3db04c53093f75003e1d2be1d5df3c3a150bc9bb534198fb9",
+      "bytes": 4143,
+      "provenance_label": "observation/model context",
+      "interpretation_limit": "Context only; proximity or coarse grids are not local risk or field measurement."
+    },
+    {
+      "file": "sar_change_overlay.png",
+      "sha256": "1be929f0429f9c3410d2e0454be0c89fd4b62fc2bcc45689a123669331ee1efc",
+      "bytes": 2440,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "sar_change_overlay.provenance.json",
+      "sha256": "d067eac9a8244ad66f8e56f3f3fb219cb278d0cb3b19b322f887ddf9dc2a331a",
+      "bytes": 2508,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "sar_change_overlay.webp",
+      "sha256": "c5db449fd750f3afcd7213e993373477b390da4c0d901e2d8f9d44ba709ebba3",
+      "bytes": 668,
+      "provenance_label": "model output from observations",
+      "interpretation_limit": "Retrospective screening output; not hazard probability, unsafe terrain, or warning."
+    },
+    {
+      "file": "story_hooks.json",
+      "sha256": "7cfd970a71d45064da25a323ebb90f09487fa1f1c07d743f7ed87cb27dcfb359",
+      "bytes": 1570,
+      "provenance_label": "narrative derived from observations",
+      "interpretation_limit": "Use all three sentences together; do not extract a predictive claim."
+    },
+    {
+      "file": "subareas.geojson",
+      "sha256": "50652418cab734f2cc960c1703f8a35f3ec1f49a5747afa7b76dd57c116dba31",
+      "bytes": 141058,
+      "provenance_label": "model/context geometry",
+      "interpretation_limit": "Analysis/context boundary; not a legal, hazard, inundation, or jurisdiction boundary."
+    },
+    {
+      "file": "subtle_change_results.json",
+      "sha256": "cf25b8d6f7a8ba629d460a39c510efb0838c63271066e695c0baa6aadf6b7881",
+      "bytes": 4242,
+      "provenance_label": "observation-derived analysis",
+      "interpretation_limit": "Descriptive research comparison with the limitations carried in the file."
+    }
+  ]
+}

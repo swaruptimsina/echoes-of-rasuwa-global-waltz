@@ -1,0 +1,29 @@
+[
+  {
+    "id": "cband_coherence",
+    "provenance_label": "observation-derived",
+    "sentences": [
+      "A Sentinel-1D pair spanning the event lost coherence inside an independently mapped detachment while the nearby control ring gained coherence.",
+      "After a control-calibrated threshold and four-pixel minimum area, 158 of 307 target pixels were flagged, versus 1225 false alarms among 30161 control pixels.",
+      "The pattern is retrospective evidence of localized surface change, not proof of a precursor, cause, displacement, or warning capability."
+    ]
+  },
+  {
+    "id": "lband_limit",
+    "provenance_label": "observation-derived diagnosed failure",
+    "sentences": [
+      "NISAR L-band median coherence fell from 0.219 in the quiet pair to 0.102 in the event pair, while the exploratory control changed only from 0.862 to 0.846.",
+      "Only 9 of 528 source pixels retained connected unwrapped phase in the event pair.",
+      "The satellite saw decorrelation, but the data do not support a displacement map or a claim that the slope was moving beforehand."
+    ]
+  },
+  {
+    "id": "latency",
+    "provenance_label": "catalog observation",
+    "sentences": [
+      "The first Sentinel-1D image used here was acquired 2.395 days after the event.",
+      "Its CMR insertion was 3.254 days after the event, while the matching OPERA RTC product was inserted about 46.379 days after the event in this archive snapshot.",
+      "These are retrospective acquisition and archive delays, not warning time or operational delivery guarantees."
+    ]
+  }
+]

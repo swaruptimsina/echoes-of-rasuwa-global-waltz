@@ -1,0 +1,50 @@
+# Dependencies & build outputs
+node_modules/
+dist/
+tsconfig.tsbuildinfo
+coverage/
+
+# Secrets, local config & credentials
+.env
+.env.*
+!.env.example
+.netrc
+
+# Runtime caches, logs & Python environments
+.tts-cache/
+*.log
+.venv/
+venv/
+__pycache__/
+pipeline/__pycache__/
+pipeline/tests/__pycache__/
+*.pyc
+.pytest_cache/
+pipeline/output_demo/
+
+# OS & editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Internal dev tooling, design references & unreferenced AI Studio assets
+.aistudio/
+.playwright-cli/
+public/assets/aistudio/
+reference_images/
+bun.lock
+docs/AGENT_LEDGER.md
+docs/PRE_EDIT_AUDIT.md
+
+# Internal layout/theme probe traces (keep submission screenshots r1-*.png & observatory-3d.png)
+docs/qa/*.jsonl
+docs/qa/*.py
+docs/qa/*.json
+docs/qa/MONITOR_LAYOUT.md
+docs/qa/REPORT.md
+docs/qa/game-theme-report.md
+docs/qa/worksheet-*.md
+docs/qa/screenshots/*
+!docs/qa/screenshots/r1-*.png
+!docs/qa/screenshots/observatory-3d.png

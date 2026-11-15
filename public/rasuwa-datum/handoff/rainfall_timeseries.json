@@ -1,0 +1,115 @@
+{
+  "provenance_label": "observation/model context",
+  "series": [
+    {
+      "date_utc": "2026-08-20",
+      "imerg_mm_day": 1.0,
+      "power_corrected_mm_day": 2.58
+    },
+    {
+      "date_utc": "2026-08-21",
+      "imerg_mm_day": 1.74,
+      "power_corrected_mm_day": 15.64
+    },
+    {
+      "date_utc": "2026-08-22",
+      "imerg_mm_day": 3.34,
+      "power_corrected_mm_day": 12.1
+    },
+    {
+      "date_utc": "2026-08-23",
+      "imerg_mm_day": 1.47,
+      "power_corrected_mm_day": 1.42
+    },
+    {
+      "date_utc": "2026-08-24",
+      "imerg_mm_day": 2.87,
+      "power_corrected_mm_day": 2.77
+    },
+    {
+      "date_utc": "2026-08-25",
+      "imerg_mm_day": 3.97,
+      "power_corrected_mm_day": 0.35
+    },
+    {
+      "date_utc": "2026-08-26",
+      "imerg_mm_day": 4.5,
+      "power_corrected_mm_day": 1.17
+    },
+    {
+      "date_utc": "2026-08-27",
+      "imerg_mm_day": 3.33,
+      "power_corrected_mm_day": 2.23
+    },
+    {
+      "date_utc": "2026-08-28",
+      "imerg_mm_day": 2.54,
+      "power_corrected_mm_day": 12.07
+    },
+    {
+      "date_utc": "2026-08-29",
+      "imerg_mm_day": 9.49,
+      "power_corrected_mm_day": 4.23
+    },
+    {
+      "date_utc": "2026-08-30",
+      "imerg_mm_day": 5.13,
+      "power_corrected_mm_day": 9.94
+    },
+    {
+      "date_utc": "2026-08-31",
+      "imerg_mm_day": 2.56,
+      "power_corrected_mm_day": 2.53
+    },
+    {
+      "date_utc": "2026-09-01",
+      "imerg_mm_day": 4.02,
+      "power_corrected_mm_day": 10.88
+    },
+    {
+      "date_utc": "2026-09-02",
+      "imerg_mm_day": 1.5,
+      "power_corrected_mm_day": 7.24
+    }
+  ],
+  "native_imerg_event_half_hour": [
+    {
+      "run": "early",
+      "granule_id": "GPM_3IMERGHHE.07:3B-HHR-E.MS.MRG.3IMERG.20260826-S023000-E025959.0150.V07C.HDF5",
+      "time_start_utc": "2026-08-26T02:30:00.000Z",
+      "time_end_utc": "2026-08-26T02:59:59.999Z",
+      "grid_center": {
+        "longitude": 85.54999542236328,
+        "latitude": 28.25
+      },
+      "precipitation_rate_mm_hr": 0.0,
+      "random_error_mm_hr": 0.23999999463558197
+    },
+    {
+      "run": "late",
+      "granule_id": "GPM_3IMERGHHL.07:3B-HHR-L.MS.MRG.3IMERG.20260826-S023000-E025959.0150.V07C.HDF5",
+      "time_start_utc": "2026-08-26T02:30:00.000Z",
+      "time_end_utc": "2026-08-26T02:59:59.999Z",
+      "grid_center": {
+        "longitude": 85.54999542236328,
+        "latitude": 28.25
+      },
+      "precipitation_rate_mm_hr": 0.0,
+      "random_error_mm_hr": 0.23999999463558197
+    }
+  ],
+  "sources": {
+    "IMERG": [
+      "https://data.gesdisc.earthdata.nasa.gov/data/GPM_L3/GPM_3IMERGHHE.07/2026/238/3B-HHR-E.MS.MRG.3IMERG.20260826-S023000-E025959.0150.V07C.HDF5",
+      "https://data.gesdisc.earthdata.nasa.gov/data/GPM_L3/GPM_3IMERGHHL.07/2026/238/3B-HHR-L.MS.MRG.3IMERG.20260826-S023000-E025959.0150.V07C.HDF5"
+    ],
+    "POWER": {
+      "daily_imerg": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=IMERG_PRECTOT&community=AG&longitude=85.528066&latitude=28.291242&start=20260820&end=20260902&format=JSON&time-standard=UTC",
+      "daily_meteorology": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR,T2M,RH2M&community=AG&longitude=85.528066&latitude=28.291242&start=20260820&end=20260902&format=JSON&time-standard=UTC",
+      "daily_wetness": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=GWETTOP,GWETROOT,GWETPROF&community=AG&longitude=85.528066&latitude=28.291242&start=20260820&end=20260902&format=JSON&time-standard=UTC",
+      "daily_volumetric": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=SFMC,RZMC,PRMC&community=AG&longitude=85.528066&latitude=28.291242&start=20260820&end=20260902&format=JSON&time-standard=UTC",
+      "hourly_meteorology": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=PRECTOTCORR,T2M,RH2M&community=AG&longitude=85.528066&latitude=28.291242&start=20260825&end=20260827&format=JSON&time-standard=UTC"
+    }
+  },
+  "limitations": "IMERG is a 0.1-degree satellite estimate and POWER meteorology/wetness is coarser model context; neither resolves the failure slope or proves a trigger."
+}

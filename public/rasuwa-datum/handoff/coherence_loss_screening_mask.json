@@ -1,0 +1,34 @@
+{
+  "observable": "Sentinel-1D VV event-minus-quiet normalized coherence",
+  "source_raster": "data/processed/s1d_hyp3/analysis/coherence_event_minus_quiet.tif",
+  "independent_reference": "data/inputs/validation/unosat_detachment.geojson",
+  "reference_role": "preliminary independent optical detachment polygon; not field ground truth",
+  "analysis_bbox_wsen": [
+    85.34,
+    28.23,
+    85.55,
+    28.32
+  ],
+  "control_definition": "valid land pixels in analysis bbox outside a 300 m detachment buffer",
+  "threshold_rule": "0.050 lower quantile of control event-minus-quiet coherence",
+  "threshold": -0.12616199254989624,
+  "mmu_pixels": 4,
+  "mmu_area_km2": 0.0256,
+  "pixel_area_km2": 0.0064,
+  "target_valid_pixels": 307,
+  "target_raw_anomaly_pixels": 158,
+  "target_filtered_anomaly_pixels": 158,
+  "target_filtered_anomaly_fraction": 0.5146579804560261,
+  "control_valid_pixels": 30161,
+  "control_raw_false_alarm_pixels": 1509,
+  "control_raw_false_alarm_fraction": 0.050031497629388945,
+  "control_filtered_false_alarm_pixels": 1225,
+  "control_filtered_false_alarm_fraction": 0.04061536421206193,
+  "full_fixed_aoi_valid_pixels": 30768,
+  "limitations": [
+    "The HyP3 burst bundle supplied water/nodata masks but no explicit layover-shadow mask; steep-terrain geometry remains an unresolved censoring issue.",
+    "The threshold is calibrated to this one temporal null/event comparison and is not a transferable hazard threshold.",
+    "Coherence loss is an observable, not unique evidence of movement; snow, moisture, surface disruption, atmosphere, and processing differences remain possible.",
+    "The map is retrospective screening support, not a forecast or operational warning product."
+  ]
+}

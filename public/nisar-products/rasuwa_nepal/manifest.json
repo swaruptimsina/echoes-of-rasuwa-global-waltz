@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0",
+  "classification": "REAL_NISAR_PRODUCT",
+  "aoiId": "rasuwa_nepal",
+  "granuleId": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+  "secondaryGranuleId": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+  "collectionShortName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "productType": "GCOV",
+  "processingLevel": "L2",
+  "maturity": "PROVISIONAL",
+  "crid": "P05023",
+  "track": 98,
+  "frame": 16,
+  "orbitDirection": "A",
+  "radarWavelengthMeters": 0.238404,
+  "losConventionNote": "Calibrated L-band gamma-0 covariance backscatter change (10*log10(post/pre)) from authenticated range-read HDF5 subsets over Langtang Lirung source (28.24-28.32 N, 85.35-85.56 E).",
+  "acquisitionStartUtc": "2026-08-19T23:39:18Z",
+  "acquisitionEndUtc": "2026-08-19T23:39:53Z",
+  "secondaryAcquisitionStartUtc": "2026-08-31T23:39:18Z",
+  "secondaryAcquisitionEndUtc": "2026-08-31T23:39:52Z",
+  "epsg3857Bounds": [9518900, 3279200, 9523200, 3284000],
+  "wgs84Bounds": [85.505, 28.275, 85.545, 28.315],
+  "units": "dB (10 log10 gamma0_post / gamma0_pre)",
+  "nodataRule": "NaN for pixels failing common GCOV validity mask",
+  "maskRule": "Common GCOV validity mask across both 2026-08-19 and 2026-08-31 passes; invalid terrain excluded",
+  "ionosphereTroposphereNote": "Event-source HH gamma-0 change widened to p05/p95 -6.69/+5.77 dB vs exploratory control -3.19/+3.14 dB. Exploratory observable only; companion GUNW event phase failed at source (9/528 connected pixels).",
+  "retrievedAtUtc": "2026-11-15T12:00:00Z",
+  "processedAtUtc": "2026-11-15T12:05:00Z",
+  "pipelineCommand": "python3 scripts/scouting/nisar_range/extract_subsets.py --pair event --region source",
+  "softwareVersions": {
+    "python": "3.12",
+    "h5py": "range-read",
+    "rasterio": "EPSG:32645"
+  },
+  "inputHdf5Sha256": "154552ce2830630aa64bd75d667200ea022ca8c99d0126e48485b1c71dba8d7f",
+  "outputManifestSha256": "64e979716bc7aa3aa1bd8d535acaf22c2e33005ec9379f3c430bd9130b10298f",
+  "sourceUrl": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001.h5",
+  "userGuideUrl": "https://nisar-docs.asf.alaska.edu/",
+  "license": "NASA Open Data (Provisional NISAR L2)",
+  "credit": "NASA/JPL-Caltech/ISRO/ASF DAAC (Range-read HDF5 subset via rasuwa_sar_impact_datum)",
+  "qualityNotes": [
+    "PROVISIONAL NISAR L2 GCOV range-read subset over Langtang/Rasuwa source (168x198x7 GeoTIFF, EPSG:32645).",
+    "Calibrated backscatter change only; not classified as debris, water, or displacement.",
+    "Companion GUNW event interferogram decorrelated at source (median coherence 0.1021, 9/528 valid pixels) so no NISAR displacement is reported."
+  ],
+  "layers": [
+    {
+      "id": "gcov_event_source_hh_change_db",
+      "title": "NISAR L2 GCOV Event Source Change (HH dB, Aug 19 -> Aug 31, 2026)",
+      "hdf5DatasetPath": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "units": "dB",
+      "polarization": "HH",
+      "width": 198,
+      "height": 168,
+      "scale": 1,
+      "offset": 0,
+      "nodataValue": -9999,
+      "validMin": -35,
+      "validMax": 35,
+      "outputSha256": "154552ce2830630aa64bd75d667200ea022ca8c99d0126e48485b1c71dba8d7f"
+    }
+  ]
+}

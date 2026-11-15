@@ -1,0 +1,59 @@
+{
+  "l_band_target_delta": -0.11669498682022095,
+  "l_band_control_delta": -0.015238642692565918,
+  "l_band_difference_of_changes": -0.10145634412765503,
+  "c_band_target_delta": -0.131317138671875,
+  "c_band_control_delta": 0.18413543701171875,
+  "c_band_difference_of_changes": -0.31545257568359375,
+  "absolute_coherence_directly_comparable": false,
+  "provenance_label": "observation-derived descriptive comparison",
+  "l_band": {
+    "sensor": "NISAR L-SAR HH",
+    "quiet_pair": [
+      "2026-07-14",
+      "2026-07-26"
+    ],
+    "event_pair": [
+      "2026-08-19",
+      "2026-08-31"
+    ],
+    "target_region": [
+      85.511,
+      28.282,
+      85.531,
+      28.297
+    ],
+    "control_region": [
+      85.491,
+      28.3505,
+      85.5075,
+      28.3653
+    ],
+    "quiet_target_median": 0.21875262260437012,
+    "event_target_median": 0.10205763578414917,
+    "quiet_control_median": 0.8615921437740326,
+    "event_control_median": 0.8463535010814667,
+    "target_fraction_ge_0_3_quiet": 0.3996212121212121,
+    "target_fraction_ge_0_3_event": 0.11174242424242424,
+    "event_phase_valid_pixels": 9,
+    "event_phase_total_pixels": 528
+  },
+  "c_band": {
+    "sensor": "Sentinel-1D VV HyP3 Burst InSAR",
+    "quiet_pair": [
+      "2026-08-04",
+      "2026-08-16"
+    ],
+    "event_pair": [
+      "2026-08-16",
+      "2026-08-28"
+    ],
+    "target_region": "independent preliminary UNOSAT detachment polygon",
+    "control_region": "0.3\u20131.5 km local ring",
+    "quiet_target_median": 0.5129233002662659,
+    "event_target_median": 0.3949596583843231,
+    "target_valid_pixels": 307,
+    "target_fraction_event_lower_than_quiet": 0.7361563517915309
+  },
+  "comparison_limit": "Only within-sensor event-minus-quiet target/control contrasts are compared. Absolute L/C coherence is not interchangeable because dates, geometry, wavelength, polarization, masks, and terrain observability differ."
+}

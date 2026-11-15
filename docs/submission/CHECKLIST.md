@@ -1,0 +1,23 @@
+# Final Space Apps Submission Verification Checklist (`CHECKLIST.md`)
+
+- [x] **1. Challenge Alignment ("Dancing with the SARs"):**
+  - Multi-temporal SAR comparison across L-band ($24\text{ cm}$), S-band ($9.4\text{ cm}$), and C-band ($5.6\text{ cm}$).
+  - Unifies an interactive character-led story (**Lali's 9-Chapter Rasuwa Adventure & 14 Proof Stories**), **8-Beat Story + 3/4 Waltz Sonata**, **26 Aug 2026 Rasuwa Multi-Sensor Datum Explorer**, **Analyst Workbench**, **3D Terrain Lab**, and **5-Biome Field Expedition**.
+- [x] **2. Real NISAR & Space-Agency Data Integration:**
+  - Live NASA CMR API queries + committed offline snapshot (`public/nisar-catalog/cmr-snapshot-2026-11-13.json`) alongside our **26 Aug 2026 Rasuwa multi-sensor audit** (`6,803` exact CMR granules / `4,774.048 km²` HydroBASINS system, schema-validated `P05023` NISAR GCOV subset `public/nisar-products/rasuwa_nepal/manifest.json`, NISAR GUNW `9/528` (`1.70%`) coherence check, Sentinel-1D `158/307` (`51.5%`) vs `4.06%` control, OPERA RTC-S1 `1.1871 km²` / `48.15%` 2-view observability, GPM IMERG `0.0 ± 0.24 mm/hr`).
+  - Real NASA Earth Observatory NISAR Hubbard Glacier reference pair (`2025-11-26` vs `2025-12-08` in `public/nisar-reference/`).
+  - JPL D-102255 18- and 20-token granule ID parser (`parseNisarGranuleId`) and Event Pair Finder (`rankPrePostEventPairs`).
+  - Reproducible Python HDF5 ingest CLI (`pipeline/ingest_nisar.py`) and Jupyter tutorial (`pipeline/notebooks/sar_change_tutorial.ipynb`).
+  - Complete integration of NASA, ISRO, CSA (`RCM`, `RADARSAT-1`, Python tutorial), ESA (`Sentinel-1D`, `OPERA`), JAXA (`ALOS-2`), and CONAE (`SAOCOM 1A/1B`) resources (`docs/RESOURCE_MAP.md`).
+- [x] **3. Scientific Integrity & `DataPassport` Gate:**
+  - `<DataPassport />` rendered on every map layer, story beat, and exported PNG figure.
+  - `validateProductManifest` accepts our real `P05023` Rasuwa GCOV subset and blocks any synthetic layer from claiming `REAL_NISAR_PRODUCT` without a schema-validated HDF5 ingest manifest.
+  - `PROVISIONAL` (`P05012`, `P05023`) and `BETA` (`X05007`, `X05010`) CRID disclaimers travel automatically with granules.
+  - Zero runtime LLM calls in scientific/UI logic; opt-in neural Voice TTS (`msedge-tts` / optional Gemini TTS) transparently disclosed in `docs/AI_DISCLOSURE.md`.
+- [x] **4. Official 2026 Demo Compliance & Automated Verification (`npm run verify`):**
+  - Strictly compliant **30-second Demo Video** (`docs/submission/Echoes_of_Rasuwa_Demo_30s.mp4`, synthesized neural audio credited, zero under-18 likeness) and **7-slide English Deck** (`docs/submission/slides.md`).
+  - `npm run typecheck` passes with 0 errors.
+  - `npm test` passes all `59` Node unit tests across `14` test files (`tests/*.test.mjs`).
+  - `node scripts/check-claims.mjs` passes with 0 violations.
+  - `python -m unittest discover -s pipeline/tests -p "test_*.py" -v` passes.
+  - `npm run build` produces code-split production bundles cleanly and `NODE_ENV=production npm start` serves `/api/health` and `/api/tts`.

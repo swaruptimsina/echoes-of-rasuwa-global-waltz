@@ -1,0 +1,52 @@
+{
+  "asset": "sar_change_overlay.png",
+  "alternate_asset": "sar_change_overlay.webp",
+  "provenance_label": "model output",
+  "observable": "OPERA RTC-S1 calibrated VV/VH backscatter change consensus",
+  "bounds_crs": "EPSG:32645",
+  "bounds": [
+    338100.0,
+    3124650.0,
+    358800.0,
+    3133770.0
+  ],
+  "pixel_size_m": [
+    30.0,
+    30.0
+  ],
+  "legend": {
+    "red": "changed in at least 2 valid radar views",
+    "yellow": "UNOSAT detachment not flagged by consensus",
+    "transparent": "not flagged or unusable"
+  },
+  "parameters": {
+    "observable": "OPERA RTC-S1 VV/VH gamma-0 post-minus-pre dB change",
+    "filter": "3x3 NaN-aware median",
+    "threshold_k_robust_sigma": 3.0,
+    "minimum_mapping_unit_pixels": 25,
+    "minimum_mapping_unit_km2": 0.0225,
+    "validity": "OPERA mask class 0 on both dates; finite positive backscatter; Copernicus DEM; slope <= 70.0 degrees",
+    "stable_reference": "valid pixels outside a 300 m buffer of the UNOSAT detachment, with slope 5\u201360 degrees",
+    "reference_url": "https://unosatgis.cern.ch/rapidmapping/rest/services/FL20260826NPL/UNOSAT_Analysis_V2/MapServer/7",
+    "interpretation_limit": "Classification is surface backscatter change, not flood/debris extent, depth, displacement, or hazard."
+  },
+  "source_products": {
+    "t019": {
+      "quiet_pre": "OPERA_L2_RTC-S1_T019-039570-IW1_20260812T001855Z_20261010T163326Z_S1D_30_v1.0",
+      "event_pre": "OPERA_L2_RTC-S1_T019-039570-IW1_20260824T001855Z_20261010T215409Z_S1D_30_v1.0",
+      "event_post": "OPERA_L2_RTC-S1_T019-039570-IW1_20260905T001855Z_20261011T061621Z_S1D_30_v1.0"
+    },
+    "t085": {
+      "quiet_pre": "OPERA_L2_RTC-S1_T085-180590-IW2_20260804T122147Z_20261010T202603Z_S1D_30_v1.0",
+      "event_pre": "OPERA_L2_RTC-S1_T085-180590-IW2_20260816T122147Z_20261011T002522Z_S1D_30_v1.0",
+      "event_post": "OPERA_L2_RTC-S1_T085-180590-IW2_20260828T122148Z_20261010T192430Z_S1D_30_v1.0"
+    },
+    "t121": {
+      "quiet_pre": "OPERA_L2_RTC-S1_T121-258660-IW3_20260807T001046Z_20261010T185724Z_S1D_30_v1.0",
+      "event_pre": "OPERA_L2_RTC-S1_T121-258660-IW3_20260819T001047Z_20261010T233828Z_S1D_30_v1.0",
+      "event_post": "OPERA_L2_RTC-S1_T121-258660-IW3_20260831T001047Z_20261010T174609Z_S1D_30_v1.0"
+    }
+  },
+  "reference_url": "https://unosatgis.cern.ch/rapidmapping/rest/services/FL20260826NPL/UNOSAT_Analysis_V2/MapServer/7",
+  "limitations": "Classification is surface backscatter change, not flood/debris extent, depth, displacement, or hazard."
+}

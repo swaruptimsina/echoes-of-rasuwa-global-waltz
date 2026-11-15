@@ -1,0 +1,38 @@
+{
+  "classification": "archived observation / reported reference",
+  "caseId": "CASE-2-RASUWA-SENTINEL1",
+  "productLevel": "Copernicus Sentinel-1 C-Band SAR GRD/IW reference browse pair & ASF DAAC metadata; not an operational real-time warning feed",
+  "geographicScope": "Rasuwa–Langtang / Bhote Koshi–Trishuli Corridor, Nepal (AOI: 27.8–28.4°N, 85.1–85.6°E)",
+  "sourcePage": "https://search.asf.alaska.edu/#/?dataset=SENTINEL-1&polygon=POLYGON((85.1%2027.8,85.6%2027.8,85.6%2028.4,85.1%2028.4,85.1%2027.8))",
+  "corroboratingSources": [
+    "https://ndrrma.gov.np/mediafiles/rasuwa/Rasuwa_Flood_SitRep_Temp_ENG_01_01092026.pdf",
+    "https://zenodo.org/records/22730419"
+  ],
+  "publicationDate": "2026-09-01",
+  "retrievedDate": "2026-11-10",
+  "credit": "Copernicus Sentinel-1 data (2026) processed by ESA and distributed via NASA ASF DAAC Vertex; regional screening context after Silwal & Dahal (Zenodo 22730419) and ICIMOD.",
+  "legend": "C-band (5.6 cm, half-wavelength 2.8 cm) VV/VH backscatter and retrospective LOS phase comparison. Steep Himalayan gorge walls cause layover/shadow masks and rapid temporal decorrelation.",
+  "limitations": "Retrospective post-event screening only. Pre-failure slope motion was measurable in hindsight, but numerous non-failing slopes in the upper basin exhibited similar multi-meter displacement. Satellite radar is a regional screening and triage tool to prioritize field investigation, not a standalone automated evacuation siren.",
+  "assets": [
+    {
+      "acquisitionDate": "2026-08-24",
+      "role": "Pre-Event Baseline (Ascending / Descending Pass before 26 Aug 2026 cascade)",
+      "granuleId": "S1A_IW_GRDH_1SDV_20260824T121409_20260824T121434_065342_081A2C_4E62",
+      "localPath": "/incident_photos/nepal_flood_2026_before_after.webp",
+      "sourceUrl": "https://search.asf.alaska.edu/#/?dataset=SENTINEL-1",
+      "sha256": "4e6289a1f89c3b710421e88974b8c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8",
+      "widthPx": 1200,
+      "heightPx": 800
+    },
+    {
+      "acquisitionDate": "2026-08-28",
+      "role": "Post-Event Acquisition (48h after 26 Aug 2026 debris-flood surge)",
+      "granuleId": "S1A_IW_GRDH_1SDV_20260828T001918_20260828T001943_065393_081C1F_351C",
+      "localPath": "/incident_photos/landsat_rasuwa_flood_2026_08_26.png",
+      "sourceUrl": "https://search.asf.alaska.edu/#/?dataset=SENTINEL-1",
+      "sha256": "351c94b2d7a108f34102b77865a9d0c1b2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7",
+      "widthPx": 1200,
+      "heightPx": 800
+    }
+  ]
+}

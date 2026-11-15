@@ -1,0 +1,39 @@
+{
+  "name": "echoes-of-rasuwa-nisar",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Echoes of Rasuwa: Global Waltz — pixel-art Earth-observation learning, archived NISAR browse comparison and clearly labeled regional simulations",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "tsx server.ts",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit && node scripts/check-claims.mjs",
+    "verify": "npm run typecheck && npm test && node scripts/check-claims.mjs && npm run build"
+  },
+  "dependencies": {
+    "@google/genai": "^3.3.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/express": "^5.0.6",
+    "express": "^5.3.0",
+    "geotiff": "^3.0.5",
+    "lucide-react": "^0.468.0",
+    "msedge-tts": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.3.5",
+    "three": "^0.170.0",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.170.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3"
+  }
+}

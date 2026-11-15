@@ -1,0 +1,43 @@
+name: CI — Typecheck, Unit Tests, Claim Audit & Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Run TypeScript typecheck
+        run: npm run typecheck
+
+      - name: Run Node test suite (48+ assertions)
+        run: npm test
+
+      - name: Run Scientific Claim-Integrity Linter
+        run: node scripts/check-claims.mjs
+
+      - name: Run Python NISAR ingest pipeline unit tests
+        run: python3 -m unittest discover -s pipeline/tests -p "test_*.py" -v
+
+      - name: Build production bundle
+        run: npm run build

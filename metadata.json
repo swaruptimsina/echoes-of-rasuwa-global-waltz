@@ -1,0 +1,8 @@
+{
+  "name": "Echoes of Rasuwa: Global Waltz — NISAR Surface-Change Observatory & Field Expedition",
+  "description": "Open-source interactive NISAR radar remote-sensing workbench, live NASA CMR catalog explorer, SAR physics primer, and 5-region Earth-observation field expedition for the 2026 NASA Space Apps Challenge (Dancing with the SARs).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use Echoes of Rasuwa: Global Waltz or its SAR change-detection workbench in research or teaching, please cite it using the metadata below."
+title: "Echoes of Rasuwa: Global Waltz — Multi-Temporal SAR Analyst Workbench, 8-Beat Scrollytelling Narrative & 5-Biome Field Expedition"
+version: 2.0.0
+date-released: 2026-11-15
+license: MIT
+repository-code: "https://github.com/swaruptimsina/echoes-of-rasuwa-global-waltz"
+keywords:
+  - NISAR
+  - Synthetic Aperture Radar
+  - SAR
+  - InSAR
+  - NASA Space Apps Challenge
+  - Rasuwa
+  - Hubbard Glacier
+  - Earth Observation
+authors:
+  - family-names: "Timsina"
+    given-names: "Swarup"
